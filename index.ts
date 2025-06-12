@@ -105,7 +105,6 @@ io.on("connection", (socket) => {
 
 // Start the server
 const PORT = process.env.PORT || 3000;
-httpServer.listen(PORT, '0.0.0.0', () => {
+httpServer.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`Access from other devices using your IP address: http://YOUR_IP_ADDRESS:${PORT}`);
 });
